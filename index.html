@@ -31,86 +31,156 @@
 
   <body class="bg-surface font-body-md text-on-surface antialiased">
     <header
-      class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
-    >
-      <div
-        class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md"
+  class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+>
+  <div
+    class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md"
+  >
+    <div class="flex items-center gap-space-md shrink-0">
+      <img
+        alt="Carlos Leyva Dev Logo"
+        class="h-8 w-auto object-contain"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ieKGo03fa_soBpmJOjhTC55RaZOf9ueirEsSin4PA4akQkDsLxd9a41s_bEzgclV73Uso8whNT30WA-Gisl5Ek1eVaUCnEd5MwLSBhAGN_JfCo5pKtF9zLPYFmcQBTUbXmC0FWI-BuUMq3imeTAzvSuIQyYH2ZizUVRlZB_B_Nqx0S0bg_D65qqsGMiykh3nyJT2v9zd8hnoGx0n_qhXTVXDdxk6z0Mcb-bdbfc"
+      />
+      <a class="flex flex-col text-left" href="#inicio">
+        <span
+          class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none"
+          >Carlos Leyva</span
+        >
+        <span class="font-label-sm text-label-sm text-tertiary"
+          >Software Engineer</span
+        >
+      </a>
+    </div>
+
+    <!-- Nav desktop (XL+) -->
+    <nav class="hidden xl:flex items-center gap-space-xs">
+      <a
+        aria-current="page"
+        class="px-3 py-2 transition-colors text-on-surface font-semibold bg-surface-container-high rounded-lg"
+        href="#inicio"
+        >Inicio</a
       >
-        <div class="flex items-center gap-space-md shrink-0">
-          <img
-            alt="Carlos Leyva Dev Logo"
-            class="h-8 w-auto object-contain"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5ieKGo03fa_soBpmJOjhTC55RaZOf9ueirEsSin4PA4akQkDsLxd9a41s_bEzgclV73Uso8whNT30WA-Gisl5Ek1eVaUCnEd5MwLSBhAGN_JfCo5pKtF9zLPYFmcQBTUbXmC0FWI-BuUMq3imeTAzvSuIQyYH2ZizUVRlZB_B_Nqx0S0bg_D65qqsGMiykh3nyJT2v9zd8hnoGx0n_qhXTVXDdxk6z0Mcb-bdbfc"
-          />
-          <a class="flex flex-col text-left" href="#inicio">
-            <span
-              class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none"
-              >Carlos Leyva</span
-            >
-            <span class="font-label-sm text-label-sm text-tertiary"
-              >Software Engineer</span
-            >
-          </a>
-        </div>
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#sobre-mi"
+        >Sobre Mí</a
+      >
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#experiencia"
+        >Experiencia</a
+      >
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#proyectos"
+        >Proyectos</a
+      >
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#habilidades"
+        >Habilidades</a
+      >
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#certificaciones"
+        >Certificaciones</a
+      >
+      <a
+        class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+        href="#contacto"
+        >Contacto</a
+      >
+    </nav>
 
-        <nav class="hidden xl:flex items-center gap-space-xs">
-          <a
-            aria-current="page"
-            class="px-3 py-2 transition-colors text-on-surface font-semibold bg-surface-container-high rounded-lg"
-            href="#inicio"
-            >Inicio</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#sobre-mi"
-            >Sobre Mí</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#experiencia"
-            >Experiencia</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#proyectos"
-            >Proyectos</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#habilidades"
-            >Habilidades</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#certificaciones"
-            >Certificaciones</a
-          >
-          <a
-            class="px-3 py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-            href="#contacto"
-            >Contacto</a
-          >
-        </nav>
+    <!-- Botones derecha -->
+    <div class="flex items-center gap-space-md shrink-0">
+      <!-- Botón CV (solo desktop) -->
+      <a
+        class="hidden md:inline-flex items-center justify-center px-space-md py-2.5 rounded-lg font-body-sm text-body-sm font-semibold bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(77,142,255,0.35)] hover:shadow-[0_0_24px_rgba(77,142,255,0.5)] transition-all"
+        href="docs/CV_Carlos_Leyva.pdf"
+        download="CV_Carlos_Leyva_Baquero.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Descargar CV</a
+      >
 
-        <div class="flex items-center gap-space-md shrink-0">
-          <a
-            class="inline-flex items-center justify-center px-space-md py-2.5 rounded-lg font-body-sm text-body-sm font-semibold bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(77,142,255,0.35)] hover:shadow-[0_0_24px_rgba(77,142,255,0.5)] transition-all"
-            href="docs/CV_Carlos_Leyva.pdf"
-            download="CV_Carlos_Leyva_Baquero.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Descargar CV</a
-          >
-          <div class="flex items-center pl-space-xs">
-            <img
-              alt="Foto de perfil de Carlos Leyva"
-              class="w-8 h-8 rounded-full object-cover ring-2 ring-tertiary/40"
-              src="img/perfil.jpg"
-            />
-          </div>
-        </div>
+      <!-- Botón hamburguesa (visible solo en < xl) -->
+      <button
+        id="menu-toggle"
+        class="xl:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container transition-colors"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span class="material-symbols-outlined text-[24px]" id="menu-icon">menu</span>
+      </button>
+
+      <!-- Foto de perfil -->
+      <div class="flex items-center pl-space-xs">
+        <img
+          alt="Foto de perfil de Carlos Leyva"
+          class="w-8 h-8 rounded-full object-cover ring-2 ring-tertiary/40"
+          src="img/perfil.jpg"
+        />
       </div>
+    </div>
+  </div>
     </header>
+
+    <!-- Menú móvil desplegable -->
+    <div
+      id="mobile-menu"
+      class="hidden xl:hidden fixed top-20 left-0 w-full z-40 bg-surface-container/95 backdrop-blur-xl shadow-xl border-t border-outline-variant/20"
+    >
+      <nav class="max-w-[1200px] mx-auto px-gutter py-space-md flex flex-col gap-space-xs">
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface font-semibold bg-surface-container-high transition-colors"
+          href="#inicio"
+          >Inicio</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#sobre-mi"
+          >Sobre Mí</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#experiencia"
+          >Experiencia</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#proyectos"
+          >Proyectos</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#habilidades"
+          >Habilidades</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#certificaciones"
+          >Certificaciones</a
+        >
+        <a
+          class="px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+          href="#contacto"
+          >Contacto</a
+        >
+
+        <a
+          class="mt-space-xs inline-flex items-center justify-center gap-space-xs px-space-md py-3 rounded-lg font-body-md text-body-md font-semibold bg-primary-container text-on-primary-container shadow-[0_0_16px_rgba(77,142,255,0.35)]"
+          href="docs/CV_Carlos_Leyva.pdf"
+          download="CV_Carlos_Leyva_Baquero.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="material-symbols-outlined text-[20px]">download</span>
+          <span>Descargar CV</span>
+        </a>
+      </nav>
+    </div>
 
     <main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)]">
       <div class="flex flex-col w-full">

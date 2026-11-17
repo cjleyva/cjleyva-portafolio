@@ -43,6 +43,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ============================================
+     Menú hamburguesa (responsive)
+     ============================================ */
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const mobileMenuLinks = mobileMenu?.querySelectorAll("a") || [];
+
+  if (menuToggle && mobileMenu && menuIcon) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+
+      if (isOpen) {
+        mobileMenu.classList.add("hidden");
+        menuIcon.textContent = "menu";
+        menuToggle.setAttribute("aria-expanded", "false");
+      } else {
+        mobileMenu.classList.remove("hidden");
+        menuIcon.textContent = "close";
+        menuToggle.setAttribute("aria-expanded", "true");
+      }
+    });
+
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuIcon.textContent = "menu";
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        mobileMenu.classList.add("hidden");
+        menuIcon.textContent = "menu";
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  /* ============================================
      Formulario de contacto → WhatsApp
      ============================================ */
   const whatsappForm = document.getElementById("whatsapp-form");
@@ -62,7 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const urlWhatsApp = `https://wa.me/${tuNumero}?text=${textoCodificado}`;
       window.open(urlWhatsApp, "_blank");
 
-      // 👇 LIMPIAR EL FORMULARIO
       whatsappForm.reset();
     });
   }
